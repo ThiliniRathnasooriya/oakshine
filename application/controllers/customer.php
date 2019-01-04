@@ -17,7 +17,7 @@ class Customer extends CI_Controller {
        // $this->form_validation->set_rules('name', 'Name', 'required');
         $data = array(
             'name' => $this->input->post('name'),
-            'nic' => $this->input->post('nic'),
+            'nic' => $this->input->post('customer_nic'),
             'address' => $this->input->post('address'),
             'email' => $this->input->post('email'),
             'phone_no' => $this->input->post('pnumber')
@@ -47,6 +47,7 @@ class Customer extends CI_Controller {
         $this->session->unset_userdata('log');
         $this->session->unset_userdata('logID');
         $this->session->sess_destroy();
+        $this->session->set_flashdata('log', 'Successfully logedout');
         $this->home();  
     }
 
