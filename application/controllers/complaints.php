@@ -17,7 +17,7 @@ class Complaints extends CI_Controller {
             'Name' => $this->input->post('name'),
             'cust_id' => $this->input->post('cust_id'),
             'order_id' => $this->input->post('order_id'),
-            'item_id' => $this->input->post('item_id'),
+            'description' => $this->input->post('description'),
             'date' => $this->input->post('date')
         );
         //var_dump($data);

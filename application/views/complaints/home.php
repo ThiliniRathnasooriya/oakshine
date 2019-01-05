@@ -56,8 +56,8 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="address">Item ID<span>*</span></label>
-                                            <input type="text" class="form-control" id="item_id" name="item_id" aria-describedby="address">
+                                            <label for="address">Description<span>*</span></label>
+                                            <input type="text" class="form-control" id="item_id" name="description" aria-describedby="address">
                                         </div>
                                     </div>
                                     <div class="col-lg-12">

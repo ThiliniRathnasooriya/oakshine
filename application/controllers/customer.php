@@ -8,16 +8,23 @@ class Customer extends CI_Controller {
     $this->load->model("customerModel");
     }
     public function home(){
+        $this->load->model('Product_model');
+		$data['data']=$this->Product_model->get_all_product();
+
+		/*Debugging Purpose*/
+        //print_r($data);
+        //$data['data'] = array();
+        
         $this->load->view('customer/header');
-		$this->load->view('customer/home');
-		$this->load->view('customer/footer');
+        $this->load->view('customer/home',$data);
+        $this->load->view('customer/footer');
     }
     public function signup(){
        // $this->load->library('form_validation');
        // $this->form_validation->set_rules('name', 'Name', 'required');
         $data = array(
             'name' => $this->input->post('name'),
-            'nic' => $this->input->post('customer_nic'),
+            'nic' => $this->input->post('nic'),
             'address' => $this->input->post('address'),
             'email' => $this->input->post('email'),
             'phone_no' => $this->input->post('pnumber')
@@ -37,6 +44,10 @@ class Customer extends CI_Controller {
         if($bl){
             $this->session->set_flashdata('log', 'Successfully loged');
             $this->session->set_userdata('logID', $bl);
+            $newdata = array(
+                'email'     => $email
+            );
+            $this->session->set_userdata($newdata);
             $this->home();//need to change
         }else{
             $this->session->set_flashdata('log', 'Email or password Incorrect');

@@ -134,7 +134,7 @@ table tr:not(:first-child){
         </div>
         <div class="form-inline">
           <label>Customer NIC</label>
-          <input type="number" id="customer_nic1" name="customer_nic" required class="form-control col-md-6" placeholder="859246865">
+          <input type="number" id="customer_nic1" name="nic" required class="form-control col-md-6" placeholder="859246865">
         </div>      
 				</div>
 			<div class="form-group">
@@ -175,7 +175,7 @@ table tr:not(:first-child){
 						
 							<?php 
 								foreach ($reg2 as $row){
-									echo "<tr><td>". $row->order_id."</td><td>". $row->order_date."</td><td>". $row->item_name."</td><td>". $row->total_amount."</td><td>". $row->customer_nic."</td></tr>";
+									echo "<tr><td>". $row->order_id."</td><td>". $row->order_date."</td><td>". $row->item_name."</td><td>". $row->total_amount."</td><td>". $row->nic."</td></tr>";
 											
 								}	
 								?>					

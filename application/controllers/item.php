@@ -9,8 +9,10 @@ class Item extends CI_Controller {
     }
 
     public function item(){
+        $id = $this->uri->segment(3);
+        //echo $id;
         $this->load->model("itemModel");
-        $data['res']=$this->itemModel->getItem('5');
+        $data['res']=$this->itemModel->getItem($id);
         $this->load->view('customer/header');
         $this->load->view('item/item', $data);
         $this->load->view('customer/footer');

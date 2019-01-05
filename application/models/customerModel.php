@@ -40,5 +40,21 @@ class customerModel extends CI_Model {
         $query = $this->db->get('item');
         return $query->result();
     }
+    public function GetCatSearchName($search_name){
+        
+
+        $this->db->select('item_name');
+        $this->db->like('item_name',$search_name);
+        $query = $this->db->get('item');
+        return $query->result();
+    }
+
+    public function searchCustomerByEmail($email){
+        $this->db->select('address');
+        $this->db->where('email',$email);
+        $query = $this->db->get('customer');
+        $query = $query->result();
+        return $query[0]->address;
+    }
 }
 

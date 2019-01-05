@@ -201,7 +201,7 @@ table tr:not(:first-child){
 						
 							<?php 
 								foreach ($reg2 as $row){
-									echo "<tr><td>". $row->item_id."</td><td>". $row->item_name."</td><td>". $row->price."</td><td>". $row->item_amount ."</td><td>". $row->discount."</td><td>". $row->installment_no."</td><td>". $row->category_id."</td><td>".$row->img1."</td><td>".$row->img2."</td><td>".$row->img3."</td><td>". $row->description."</td><td>". $row->reorder."</td><td>". $row->date."</td></tr>";
+									echo "<tr><td>". $row->item_id."</td><td>". $row->item_name."</td><td>". $row->price."</td><td>". $row->item_amount ."</td><td>". $row->discount."</td><td>". $row->installments_no."</td><td>". $row->category_id."</td><td>".$row->img1."</td><td>".$row->img2."</td><td>".$row->img3."</td><td>". $row->description."</td><td>". $row->reorder."</td><td>". $row->date."</td></tr>";
 											
 								}	
 								?>					

@@ -26,7 +26,7 @@ class AdminItem extends CI_Controller {
             'price' => $this->input->post('price'),
             'item_amount' => $this->input->post('item_amount'),
             'discount' => $this->input->post('discount'),
-            'installment_no' => $this->input->post('installment_no'),
+            'installments_no' => $this->input->post('installment_no'),
             'category_id' => $this->input->post('category_id'),
             'img1' => $this->input->post('img1'),
             'img2' => $this->input->post('img2'),
@@ -45,7 +45,7 @@ class AdminItem extends CI_Controller {
             'price' => $this->input->post('price'),
             'item_amount' => $this->input->post('item_amount'),
             'discount' => $this->input->post('discount'),
-            'installment_no' => $this->input->post('installment_no'),
+            'installments_no' => $this->input->post('installment_no'),
             'reorder' => $this->input->post('reorder'),
             'date' => $this->input->post('date')
         );

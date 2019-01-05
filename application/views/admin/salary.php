@@ -121,18 +121,15 @@
 							<table class="table table-hover">
 						<thead>
 							<tr class="table100-head">
-								<th class="column1">Employee ID</th>
+								<th class="column1">Employee NIC</th>
 								<th class="column2">Basic salary</th>
 								<th class="column3">Total Salary</th>
 							</tr>
 						</thead>
 						<tbody>
-							<?php 
-								foreach ($reg2 as $row){
-									echo "<tr><td>". $row->employee_id."</td><td>". $row->basic_salary."</td><td>". $row->total."</td></tr>";
-										
-								}	
-								?>					
+							<th><?php echo $emNIC;?></th>
+							<th><?php echo $?></th>
+							<th><?php echo $tot;?></th>						
    
 						</tbody>
 					</table>

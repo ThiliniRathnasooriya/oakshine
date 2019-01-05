@@ -1,14 +1,4 @@
-<?php
-       if(isset($_SESSION['log'])){?>
-       <div class="alert alert-primary" role="alert">
-          <?php 
-            echo $_SESSION['log'];
-          ?>
-          </div>
-       <?php } else{?>
-            <div></div>
-       <?php }
-       ?>
+
         <!--================Home Carousel Area =================-->
         <section class="home_carousel_area">
             <div class="home_carousel_slider owl-carousel">
@@ -19,7 +9,7 @@
                             <h3>Refrigerator</h3>
                             <h4>We feature the best refrigerators </h4>
                             <h5>Including:</h5>
-                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <p>Energy saving refrigerators with green technology</p>
                             <a class="discover_btn" href="#">discover now</a>
                         </div>
                     </div>
@@ -28,10 +18,10 @@
                     <div class="h_carousel_item">
                         <img src="<?php echo base_url().'assets/img/product/item-2.jpg';?>" alt="">
                         <div class="carousel_hover">
-                            <h3>mens bag</h3>
-                            <h4>We feature the best professional bags </h4>
+                            <h3>Dressing Table</h3>
+                            <h4>We feature the best dressing tables </h4>
                             <h5>Including:</h5>
-                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <p>Finest wood & newest designs</p>
                             <a class="discover_btn" href="#">discover now</a>
                         </div>
                     </div>
@@ -40,10 +30,10 @@
                     <div class="h_carousel_item">
                         <img src="<?php echo base_url().'assets/img/product/item-3.jpg';?>" alt="">
                         <div class="carousel_hover">
-                            <h3>mens bag</h3>
-                            <h4>We feature the best professional bags </h4>
+                            <h3>Cupboard</h3>
+                            <h4>We feature the best cupboards </h4>
                             <h5>Including:</h5>
-                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <p>Modest designs at lowest prices for long term use</p>
                             <a class="discover_btn" href="#">discover now</a>
                         </div>
                     </div>
@@ -52,10 +42,10 @@
                     <div class="h_carousel_item">
                         <img src="<?php echo base_url().'assets/img/product/item-4.jpg';?>" alt="">
                         <div class="carousel_hover">
-                            <h3>mens bag</h3>
-                            <h4>We feature the best professional bags </h4>
+                            <h3>Plastic Chair</h3>
+                            <h4>We feature the best plastic chair </h4>
                             <h5>Including:</h5>
-                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <p>Quality plastic chairs with new designs</p>
                             <a class="discover_btn" href="#">discover now</a>
                         </div>
                     </div>
@@ -64,17 +54,27 @@
                     <div class="h_carousel_item">
                         <img src="<?php echo base_url().'assets/img/product/item-5.jpg';?>" alt="">
                         <div class="carousel_hover">
-                            <h3>mens bag</h3>
-                            <h4>We feature the best professional bags </h4>
+                            <h3>Mattress</h3>
+                            <h4>We feature the best mattress </h4>
                             <h5>Including:</h5>
-                            <p>Adidas, Century, Everlast, Fairtex, Fighting Sports, WaveMaster, Twins, Rival</p>
+                            <p>healthy designs & good quality</p>
                             <a class="discover_btn" href="#">discover now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--================End Home Carousel Area =================-->
+        <?php
+       if(isset($_SESSION['log'])){?>
+       <div class="alert alert-primary" role="alert">
+          <?php 
+            echo $_SESSION['log'];
+          ?>
+          </div>
+       <?php } else{?>
+            <div></div>
+       <?php }
+       ?>
         <!--================Special Offer Area =================-->
         <!-- <section class="special_offer_area">
             <div class="container">
@@ -105,23 +105,23 @@
         
         <!--================Latest Product isotope Area =================-->
         <section class="fillter_latest_product">
-            <div class="container">
+            <!-- <div class="container">
                 <div class="single_c_title">
                     <h2>Our Latest Product</h2>
                 </div>
                 <div class="fillter_l_p_inner">
                     <ul class="fillter_l_p">
-                        <li class="active" data-filter="*"><a href="#">Electric</a></li>
-                        <li data-filter=".woman"><a href="#">Wood</a></li>
-                        <li data-filter=".acc"><a href="#">Steel</a></li>
-                        <li data-filter=".shoes"><a href="#">Matress</a></li>
-                        <li data-filter=".bags"><a href="#">Other</a></li>
+                        <li class="active" data-filter="*"><a href="#">1</a></li>
+                        <li data-filter=".woman"><a href="#">2</a></li>
+                        <li data-filter=".acc"><a href="#">3</a></li>
+                        <li data-filter=".shoes"><a href="#">4</a></li>
+                        <li data-filter=".bags"><a href="#">5</a></li>
                     </ul>
                     <div class="row isotope_l_p_inner">
                         <div class="col-lg-3 col-md-4 col-sm-6 woman bags">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-1.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-78.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
@@ -129,15 +129,15 @@
                                         <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Ele Kettle</h4>
+                                    <h5>Rs. 2650/-</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 acc shoes">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-2.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-76.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
@@ -145,15 +145,15 @@
                                         <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Iron</h4>
+                                    <h5>Rs. 2250/-</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 woman shoes">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-3.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-72.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
@@ -161,15 +161,15 @@
                                         <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Standing fan</h4>
+                                    <h5>Rs. 7650/-</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 woman shoes">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-4.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-59.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
@@ -177,15 +177,15 @@
                                         <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Verenda chair(4Pcs)</h4>
+                                    <h5>Rs. 12 400/-</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 woman shoes">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-5.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-40.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
@@ -193,15 +193,15 @@
                                         <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Shoe rack</h4>
+                                    <h5>Rs. 1900/-</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 acc shoes bags">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-6.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-51.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
@@ -209,15 +209,15 @@
                                         <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Mosquito net</h4>
+                                    <h5>Rs. 2200/-</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 acc bags">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-7.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-63.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
@@ -225,326 +225,142 @@
                                         <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Relaxing chair(4Pcs)</h4>
+                                    <h5>Rs. 12 400/-</h5>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 acc bags">
                             <div class="l_product_item">
                                 <div class="l_p_img">
-                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/l-product-8.jpg';?>" alt="">
+                                    <img class="img-fluid" src="<?php echo base_url().'assets/img/product/item-56.jpg';?>" alt="">
                                 </div>
                                 <div class="l_p_text">
                                     <ul>
                                         <li class="p_icon"><a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i></a></li>
-                                        <li><a class="add_cart_btn" href="#">Add To Cart</a></li>
+                                        <li><a class="add_cart_btn"  data-productname="Clothes rack" data-productprice="3250" data-productid="2" href="#">Add To Cart</a></li>
                                         <li class="p_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></i></a></li>
                                     </ul>
-                                    <h4>Womens Libero</h4>
-                                    <h5><del>$45.50</del>  $40</h5>
+                                    <h4>Clothes rack</h4>
+                                    <h5>Rs. 3250/-</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--================End Latest Product isotope Area =================-->
-        
-        <!--================Product_listing Area =================-->
-        <section class="product_listing_area">
-            <div class="container">
-                <div class="row p_listing_inner">
-                    <div class="col-lg-4">
+            </div> -->
+            <div class="container"><br/>
+                <h2>Our Latest Product</h2>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>Product</h4>
                         <div class="row">
-                            <div class="col-lg-6 col-sm-8">
-                                <div class="p_list_text">
-                                    <h3>Men</h3>
-                                    <ul>
-                                        <li><a href="#">Down Jackets</a></li>
-                                        <li><a href="#">Hoodies</a></li>
-                                        <li><a href="#">Suits</a></li>
-                                        <li><a href="#">Jeans</a></li>
-                                        <li><a href="#">Casual Pants</a></li>
-                                        <li><a href="#">Sunglass</a></li>
-                                    </ul>
+                        <?php foreach ($data->result() as $row) : ?>
+                            <div class="col-md-4">
+                                <div class="thumbnail">
+                                    <img width="200" src="<?php echo base_url().'assets/img/product/'.$row->img1;?>">
+                                    <div class="caption">
+                                        <h4><?php echo $row->item_name;?></h4>
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <h4><?php echo number_format($row->price);?></h4>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <input type="number" name="quantity" id="<?php echo $row->item_id;?>" value="1" class="quantity form-control">
+                                            </div>
+                                        </div>
+                                        <button class="add_cart btn-success btn-block" data-productid="<?php echo $row->item_id;?>" data-productname="<?php echo $row->item_name;?>" data-productprice="<?php echo $row->price;?>" >Add To Cart</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-sm-4">
-                                <div class="p_list_img">
-                                    <img src="<?php echo base_url().'assets/img/product/p-categories-list/product-l-1.jpg';?>" alt="">
-                                </div>
-                            </div>
+                        <?php endforeach;?>
+                            
                         </div>
+
                     </div>
-                    <div class="col-lg-4">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-8">
-                                <div class="p_list_text">
-                                    <h3>Women</h3>
-                                    <ul>
-                                        <li><a href="#">Down Jackets</a></li>
-                                        <li><a href="#">Hoodies</a></li>
-                                        <li><a href="#">Suits</a></li>
-                                        <li><a href="#">Jeans</a></li>
-                                        <li><a href="#">Casual Pants</a></li>
-                                        <li><a href="#">Sunglass</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-4">
-                                <div class="p_list_img">
-                                    <img src="<?php echo base_url().'assets/img/product/p-categories-list/product-l-2.jpg';?>" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-8">
-                                <div class="p_list_text">
-                                    <h3>Accessories</h3>
-                                    <ul>
-                                        <li><a href="#">Down Jackets</a></li>
-                                        <li><a href="#">Hoodies</a></li>
-                                        <li><a href="#">Suits</a></li>
-                                        <li><a href="#">Jeans</a></li>
-                                        <li><a href="#">Casual Pants</a></li>
-                                        <li><a href="#">Sunglass</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-sm-4">
-                                <div class="p_list_img">
-                                    <img src="<?php echo base_url().'assets/img/product/p-categories-list/product-l-3.jpg';?>" alt="">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-4">
+                        <h4>Shopping Cart</h4>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Items</th>
+                                    <th>Price</th>
+                                    <th>Qty</th>
+                                    <th>Total</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="detail_cart">
+
+                            </tbody>
+                            
+                        </table>
+                        <form method="post" action="<?php echo base_url().'Product/checkOutCard';?>">
+                            <button type="submit">Submit</button><br>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!--================End Product_listing Area =================-->
+
+<!-- <div class="row">
+
+<table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Items</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="detail_cart">
+ 
+                </tbody>
+                 
+            </table>
+</div> -->
+<script type="text/javascript" src="<?php echo base_url().'assets/js/jquery-3.2.1.js'?>"></script>
+<script type="text/javascript" src="<?php echo base_url().'assets/js/bootstrap.js'?>"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.add_cart').click(function(){
+            var product_id    = $(this).data("productid");
+            var product_name  = $(this).data("productname");
+            var product_price = $(this).data("productprice");
+            var quantity      = $('#' + product_id).val();
+          //var quantity = 1;
+            $.ajax({
+                url : "<?php echo site_url('Product/add_to_cart');?>",
+                method : "POST",
+                data : {product_id: product_id, product_name: product_name, product_price: product_price, quantity: quantity},
+                success: function(data){
+                    $('#detail_cart').html(data);
+                }
+            });
+        });
+ 
+         
+        $('#detail_cart').load("<?php echo site_url('Product/load_cart');?>");
+ 
+         
+        $(document).on('click','.romove_cart',function(){
+            var row_id=$(this).attr("id"); 
+            $.ajax({
+                url : "<?php echo site_url('Product/delete_cart');?>",
+                method : "POST",
+                data : {row_id : row_id},
+                success :function(data){
+                    $('#detail_cart').html(data);
+                }
+            });
+        });
+    });
+</script>
+
+
+      <!--================End Latest Product isotope Area =================-->
         
-        <!--================Featured Product Area =================-->
-        <section class="feature_product_area">
-            <div class="container">
-                <div class="f_p_inner">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="f_product_left">
-                                <div class="s_m_title">
-                                    <h2>Featured Products</h2>
-                                </div>
-                                <div class="f_product_inner">
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="<?php echo base_url().'assets/img/product/featured-product/f-p-1.jpg';?>" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4>Oxford Shirt</h4>
-                                            <h5>$45.05</h5>
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="<?php echo base_url().'assets/img/product/featured-product/f-p-2.jpg';?>" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4>Puffer Jacket</h4>
-                                            <h5>$45.05</h5>
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="<?php echo base_url().'assets/img/product/featured-product/f-p-3.jpg';?>" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4>Leather Bag</h4>
-                                            <h5>$45.05</h5>
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <div class="d-flex">
-                                            <img src="<?php echo base_url().'assets/img/product/featured-product/f-p-4.jpg';?>" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <h4>Casual Shoes</h4>
-                                            <h5>$45.05</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="fillter_slider_inner">
-                                <ul class="portfolio_filter">
-                                    <li class="active" data-filter="*"><a href="#">men's</a></li>
-                                    <li data-filter=".woman"><a href="#">Woman</a></li>
-                                    <li data-filter=".shoes"><a href="#">Shoes</a></li>
-                                    <li data-filter=".bags"><a href="#">Bags</a></li>
-                                </ul>
-                                <div class="fillter_slider owl-carousel">
-                                    <div class="item shoes">
-                                        <div class="fillter_product_item bags">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-1.jpg';?>" alt="">
-                                                <h5 class="sale">Sale</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>Nike Max Air Vapor Power</h5>
-                                                <h4>$45.05</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item woman shoes bags">
-                                        <div class="fillter_product_item">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-2.jpg';?>" alt="">
-                                                <h5 class="new">New</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>Fossil Watch</h5>
-                                                <h4><del>$250</del> $110</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item woman shoes">
-                                        <div class="fillter_product_item">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-3.jpg';?>" alt="">
-                                                <h5 class="discount">-10%</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>High Heel</h5>
-                                                <h4>$45.05</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item shoes">
-                                        <div class="fillter_product_item bags">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-1.jpg';?>" alt="">
-                                                <h5 class="sale">Sale</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>Nike Max Air Vapor Power</h5>
-                                                <h4>$45.05</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item woman shoes bags">
-                                        <div class="fillter_product_item">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-2.jpg';?>" alt="">
-                                                <h5 class="new">New</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>Fossil Watch</h5>
-                                                <h4><del>$250</del> $110</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item woman shoes">
-                                        <div class="fillter_product_item">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-3.jpg';?>" alt="">
-                                                <h5 class="discount">-10%</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>High Heel</h5>
-                                                <h4>$45.05</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item shoes">
-                                        <div class="fillter_product_item bags">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-1.jpg';?>" alt="">
-                                                <h5 class="sale">Sale</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>Nike Max Air Vapor Power</h5>
-                                                <h4>$45.05</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item woman shoes bags">
-                                        <div class="fillter_product_item">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-2.jpg';?>" alt="">
-                                                <h5 class="new">New</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>Fossil Watch</h5>
-                                                <h4><del>$250</del> $110</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item woman shoes">
-                                        <div class="fillter_product_item">
-                                            <div class="f_p_img">
-                                                <img src="<?php echo base_url().'assets/img/product/fillter-product/f-product-3.jpg';?>" alt="">
-                                                <h5 class="discount">-10%</h5>
-                                            </div>
-                                            <div class="f_p_text">
-                                                <h5>High Heel</h5>
-                                                <h4>$45.05</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--================End Featured Product Area =================-->
         
-        <!--================Form Blog Area =================-->
-        <section class="from_blog_area">
-            <div class="container">
-                <div class="from_blog_inner">
-                    <div class="c_main_title">
-                        <h2>From The Blog</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="from_blog_item">
-                                <img class="img-fluid" src="<?php echo base_url().'assets/img/blog/from-blog/f-blog-1.jpg';?>" alt="">
-                                <div class="f_blog_text">
-                                    <h5>fashion</h5>
-                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
-                                    <h6>21.09.2017</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="from_blog_item">
-                                <img class="img-fluid" src="<?php echo base_url().'assets/img/blog/from-blog/f-blog-2.jpg';?>" alt="">
-                                <div class="f_blog_text">
-                                    <h5>fashion</h5>
-                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
-                                    <h6>21.09.2017</h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="from_blog_item">
-                                <img class="img-fluid" src="<?php echo base_url().'assets/img/blog/from-blog/f-blog-3.jpg';?>" alt="">
-                                <div class="f_blog_text">
-                                    <h5>fashion</h5>
-                                    <p>Neque porro quisquam est qui dolorem ipsum</p>
-                                    <h6>21.09.2017</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--================End Form Blog Area =================-->
-        
-       

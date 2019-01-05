@@ -38,16 +38,18 @@ class Employee extends CI_Controller {
     }
    
     public function salary(){
-        $id = $this->input->post('employee_id');
-        $month = $this->input->post('month');
-        //$id = 1;
+        // $id = $this->input->post('employee_id');
+        // $month = $this->input->post('month');
+        
+        $id = 924505401;
+        $month = 12;
         if($this->session->userdata('logged')>0){
-            $data['reg2'] = $this->employeeModel->salary($id,$month);//me id eka kohenda awe
+            $data = $this->employeeModel->salary($id,$month);//me id eka kohenda awe
+            var_dump($data);
             $this->load->view('admin/header');
             $this->load->view('admin/nav');
             $this->load->view('admin/salary', $data);
             $this->load->view('admin/footer');
-            // var_dump($data);
         }else{
             $this->log();
         }
@@ -81,7 +83,7 @@ class Employee extends CI_Controller {
         $this->index();
     }
     public function employeedelete(){
-        $id = $this->input->post('employee_id');
+        $id = $this->input->post('nic');
         //var_dump($data);
         $this->employeeModel->deleteEmployee($id);
         $this->index();

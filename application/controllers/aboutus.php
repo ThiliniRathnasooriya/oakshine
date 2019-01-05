@@ -11,4 +11,5 @@ class Aboutus extends CI_Controller {
 		$this->load->view('aboutus/home');
 		$this->load->view('customer/footer');
     }
+    
 }

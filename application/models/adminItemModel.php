@@ -15,7 +15,7 @@ class adminItemModel extends CI_Model
                 'item_amount' => $data['item_amount'],
                 'discount' => $data['discount'],
                 'total_item_amount' => $total,
-                'installment_no' => $data['installment_no'],
+                'installments_no' => $data['installments_no'],
                 'category_id' => $data['category_id'],
                 'img1' => $data['img1'],
                 'img2' => $data['img2'],
@@ -32,7 +32,7 @@ class adminItemModel extends CI_Model
         $this->db->set('price', $data['price']);
         $this->db->set('item_amount', $data['item_amount']);
         $this->db->set('discount', $data['discount']);
-        $this->db->set('installment_no', $data['installment_no']);
+        $this->db->set('installments_no', $data['installments_no']);
         $this->db->set('reorder', $data['reorder']);
         $this->db->set('date', $data['date']);
         $this->db->update('item');

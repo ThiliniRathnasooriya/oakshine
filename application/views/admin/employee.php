@@ -406,10 +406,10 @@ table tr:not(:first-child){
         </button>
       </div>
       <div class="modal-body">
-        <form method="post" action="<?php echo base_url().'employee/salary';?>">
+        <form method="post" action="<?php echo base_url().'Employee/salary';?>">
 			<div class="form-group">
           <label>Employee NIC</label>
-					<select class="form-control target" id="customer_nic" name="customer_nic">
+					<select class="form-control target" id="employee_id" name="employee_id">
 							<option>Employee NIC</option>
                 <?php foreach($reg2 as $employee){?>
                   <option value="<?php echo $employee->nic;?>"><?php echo $employee->nic;?></option>

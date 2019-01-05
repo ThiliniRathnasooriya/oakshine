@@ -28,3 +28,35 @@
     </div>
   </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $('#numOfNot').hide();
+        // setInterval("ajaxd()", 5000);
+        });
+    
+    function ajaxd(){
+        $.ajax({
+                //$('#numOfNot').hide();
+                url: '<?php echo base_url();?>/admin/returns',
+                type: 'GET',
+                dataType:'json',
+                async: true,
+                success: function(res) {
+                    
+                    if(res && res.length) {
+                        $('#numOfNot').show();
+                        $('#notify').html('<a href="<?php echo base_url().'admin/vendorR'?>" class="dropdown-item"><i class="fa fa-file mr-2"></i> '+res.length+' vendors will expire in a week</a>');
+                    
+                    }
+                    else{
+                        $('#numOfNot').hide();
+                        $('#notify').html('<div class="dropdown-item">No notifications</div>');
+                    }
+                },
+                error: function(){
+                    console.log('error loading notifications');
+                }
+                
+            });
+    }
+</script>

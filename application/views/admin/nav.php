@@ -31,9 +31,9 @@
 		<ul class="navbar-nav ml-auto">
 			<!-- Messages Dropdown Menu -->
 			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+				<a class="nav-link" data-toggle="dropdown" href="#">
 					<i class="fa fa-comments-o"></i>
-					<span class="badge badge-warning navbar-badge"></span>
+					<span class="badge badge-warning navbar-badge">3</span>
 				</a>
 				<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 					<a href="#" class="dropdown-item">
@@ -156,7 +156,7 @@
 						</ul>
 					</li> -->
 					<li class="nav-item">
-						<a href="#" class="nav-link">
+						<a href="<?php echo base_url().'admin/index'?>" class="nav-link">
 							<i class="nav-icon fa fa-th"></i>
 							<p>
 								Home
@@ -164,17 +164,8 @@
 							</p>
 						</a>
 					</li>
-					 <li class="nav-item">
-						<a href="<?php echo base_url();?>admincustomer" class="nav-link">
-							<i class="nav-icon fa fa-th"></i>
-							<p>
-								Customers
-								<!-- <span class="right badge badge-danger">New</span> -->
-							</p>
-						</a>
-					</li>
                      <li class="nav-item">
-                        <a href="<?php echo base_url();?>employee" class="nav-link">
+                        <a href="<?php echo base_url().'Employee'?>" class="nav-link">
                             <i class="nav-icon fa fa-th"></i>
                             <p>
                                 Employees
@@ -182,8 +173,9 @@
                             </p>
 					
                         </a>
+												</li>
 						<li class="nav-item">
-                        <a href="<?php echo base_url();?>adminItem" class="nav-link">
+                        <a href="<?php echo base_url().'adminItem'?>" class="nav-link">
                             <i class="nav-icon fa fa-th"></i>
                             <p>
                                 Items
@@ -191,63 +183,7 @@
                             </p>
 					
                         </a>
-						<li class="nav-item">
-                        <a href="<?php echo base_url();?>adminCategory" class="nav-link">
-                            <i class="nav-icon fa fa-th"></i>
-                            <p>
-								Categories
-                                <!-- <span class="right badge badge-danger">New</span> -->
-                            </p>
-					
-                        </a>
-
-						<li class="nav-item">
-                        <a href="<?php echo base_url();?>adminOrders" class="nav-link">
-                            <i class="nav-icon fa fa-th"></i>
-                            <p>
-								Orders
-                                <!-- <span class="right badge badge-danger">New</span> -->
-                            </p>
-					
-                        </a>
-
-						<li class="nav-item">
-                        <a href="<?php echo base_url();?>adminBill" class="nav-link">
-                            <i class="nav-icon fa fa-th"></i>
-                            <p>
-								Bills
-                                <!-- <span class="right badge badge-danger">New</span> -->
-                            </p>
-					
-                        </a>
-
-						<li class="nav-item">
-                        <a href="<?php echo base_url();?>vehicle" class="nav-link">
-                            <i class="nav-icon fa fa-th"></i>
-                            <p>
-								Vehicles
-                                <!-- <span class="right badge badge-danger">New</span> -->
-                            </p>
-					
-                        </a>
-						<li class="nav-item">
-                        <a href="<?php echo base_url();?>adminReturnItem" class="nav-link">
-                            <i class="nav-icon fa fa-th"></i>
-                            <p>
-                                Returned Items
-                                <!-- <span class="right badge badge-danger">New</span> -->
-                            </p>
-					
-                        </a>
-						<li class="nav-item">
-						<a href="<?php echo base_url();?>report" class="nav-link">
-                            <i class="nav-icon fa fa-th"></i>
-                            <p>
-                                Reports
-                                <!-- <span class="right badge badge-danger">New</span> -->
-                            </p>
-					
-                        </a>
+												</li>
 						<!--
                     </li>
                     <li class="nav-item">
@@ -258,9 +194,81 @@
                                 <!-- <span class="right badge badge-danger">New</span> -->
                             <!-- </p>
                         </a>
-                    </li> --> 
+                    </li> -->
+					<li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-tree"></i>
+              <p>
+                Bills
+                <i class="fa fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="<?php echo base_url().'admin/viewBill';?>" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Add Bill</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>admin/searchBill" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Edit Bill</p>
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="../UI/icons.html" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Edit Bill</p>
+                </a>
+              </li> -->
+              
+            </ul>
+          </li> 
+		  <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-dashboard"></i>
+              <p>
+                Customer
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+               <li class="nav-item">
+                <a href="<?php echo base_url();?>admin/addCustomer" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Add Customer</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>admin/viewCustomer" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>View customer</p>
+                </a>
+              </li>
+             
+            </ul>
+          </li>	
+		  <li class="nav-item has-treeview">
+            <a href="<?php echo base_url();?>admin/viewItem" class="nav-link">
+              <i class="nav-icon fa fa-pie-chart"></i>
+              <p>
+                Return Items
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+          </li>
+					<li class="nav-item has-treeview">
+            <a href="<?php echo base_url();?>admin/updateBill" class="nav-link">
+              <i class="nav-icon fa fa-pie-chart"></i>
+              <p>
+                Update Bill
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+          </li>
 					<li class="nav-item">
-						<a href="<?php echo base_url().'Admin/logout'?>" class="nav-link">
+						<a href="<?php echo base_url().'admin/logout'?>" class="nav-link">
 							<i class="nav-icon fa  fa-circle-o-notch"></i>
 							<p>
 								logOut
@@ -268,6 +276,7 @@
 							</p>
 						</a>
 					</li>
+					
 				</ul>
 			</nav>
 			<!-- /.sidebar-menu -->

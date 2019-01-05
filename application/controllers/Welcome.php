@@ -20,8 +20,15 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('customer/header');
-		$this->load->view('customer/home');
-		$this->load->view('customer/footer');
+		$this->load->model('Product_model');
+		$data['data']=$this->Product_model->get_all_product();
+
+		/*Debugging Purpose*/
+        //print_r($data);
+        //$data['data'] = array();
+        
+        $this->load->view('customer/header');
+        $this->load->view('customer/home',$data);
+        $this->load->view('customer/footer');
 	}
 }

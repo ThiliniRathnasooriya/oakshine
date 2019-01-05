@@ -24,21 +24,50 @@ class employeeModel extends CI_Model
         }
 
     public function deleteEmployee($id){
-            $this->db->where('employee_id', $id);
+            $this->db->where('nic  ', $id);
             $this->db->delete('employee');
         }
         
     public function salary($id,$month){
-            $query = $this->db->query("SELECT SUM((countid*com),bsalary),
-            (SELECT count(b.bill_no) AS countid FROM bill AS b WHERE MONTH(date)=$month AND employee_id=$id),
-            (SELECT e.commission AS com,e.basic_salary AS bsalary FROM employee AS e WHERE employee_id=$id)
-            FROM bill AS b
-                INNER JOIN employee AS e 
-                    ON (b.[employee_nic] =e.[employee_nic])
-            ")
-            ;
-            return $query->result();
+            $this->db->select('employee_id');
+            $this->db->where('nic',$id);
+            $nic = $this->db->get('employee');
+            foreach($nic->result() as $emp){
+                $empID = $emp->employee_id;         
+            }
+            
+            // //$date = explode("-", $datevalue);
+            $count = $this->db->query("SELECT bill_no FROM bill WHERE MONTH(bill_date)=$month AND employee_id=$empID");
+            $tot = 0;
+            foreach($count as $c){
+                $tot = $tot + 1;
+            }
+            $salary = $this->db->query("SELECT * FROM employee WHERE nic=$id");
+            $this->db->select('*');
+            $this->db->where('nic',$id);
+            $salary = $this->db->get('employee');
+            foreach($salary->result() as $sal){
+                $bas=$sal->basic_salary;
+                $cos=$sal->comission;
+            }
+            $total= $bas+$cos*$tot;
+            $data['tot']  = $total;
+            $data['emNIC'] = $id;
+            $data['btot'] = $bas;
+            return $data;
         }
+
+    // public function salary($id,$month){
+    //         $query = $this->db->query("SELECT SUM((countid*com),bsalary),
+    //         (SELECT count(b.bill_no) AS countid FROM bill AS b WHERE MONTH(date)=$month AND employee_id=$id),
+    //         (SELECT e.commission AS com,e.basic_salary AS bsalary FROM employee AS e WHERE employee_id=$id)
+    //         FROM bill AS b
+    //             INNER JOIN employee AS e 
+    //                 ON (b.[employee_nic] =e.[employee_nic])
+    //         ")
+    //         ;
+    //         return $query->result();
+    //     }
 
     // public function salary($id,$month){
     //         $query = $this->db->query("SELECT count(bill_no) AS countid FROM bill WHERE MONTH(date)=$month AND employee_id=$id");

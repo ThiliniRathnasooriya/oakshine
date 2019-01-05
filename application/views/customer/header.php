@@ -76,25 +76,25 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav categories">
                                 <li class="nav-item">
-                                    <select class="selectpicker">
+                                    <select class="selectpicker" id="opt" onchange="myFunction()">
                                     <option>Categories</option>
-                                    <option>Electric</option>
-                                    <option>MDF(wood)</option>
-                                    <option>Steel</option>
-                                    <option>Plastic</option>
-                                    <option>Matress</option>
-                                    <option>Other</option>
+                                    <option value="1">Electric</option>
+                                    <option value="2">MDF(wood)</option>
+                                    <option value="3">Steel</option>
+                                    <option value="4">Plastic</option>
+                                    <option value="5">Matress</option>
+                                    <option value="6">Other</option>
                                     </select>
                                 </li>
                             </ul>
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>customer/home">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>aboutus">About_Us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url();?>complaints">Complaints</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#"></a></li>
                             </ul>
                             <ul class="navbar-nav justify-content-end">
-                                <li class="search_icon"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                            <li class="search_icon"><a type="button" title="search" data-toggle="modal" data-target="#searchModal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                                 <?php if(isset($_SESSION['logID'])){?>
                                     <li class="user_icon"><a title="Profile" href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                                     <li class="user_icon"><a title="log out" href="<?php echo base_url().'customer/logout';?>"><i class="fa fa-sign-out" aria-hidden="true"></i></a></li>

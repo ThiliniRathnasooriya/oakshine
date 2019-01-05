@@ -9,10 +9,12 @@ class Category extends CI_Controller {
     }
 
     public function category(){
+        $id = $this->uri->segment(3);
+        //echo $id;
         $this->load->model("categoryModel");
-        $data['res']=$this->categoryModel->getCategory('1');
+        $data['res']=$this->categoryModel->getCategory($id);
         $this->load->view('customer/header');
-        $this->load->view('category/category', $data);
+        $this->load->view('category/home', $data);
         $this->load->view('customer/footer');
         //foreach($res as $row){
         //     $iid = $row->item_id;

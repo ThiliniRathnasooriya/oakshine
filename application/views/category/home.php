@@ -7,6 +7,7 @@
                     <div class="row">
                     <?php foreach($res as $row){ ?>
                         <div class="col-lg-3 col-sm-6">
+                        <a href="<?php echo base_url().'item/item/'.$row->item_id;?>">
                             <div class="l_product_item">
                                 <div class="l_p_img">
                                     <img class="img-fluid" src="<?php echo base_url().'assets/img/product/'.$row->img1;?>" alt="">
@@ -22,6 +23,7 @@
                                     <h5><?php echo $row->price;?></h5>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <?php }?>
                         
